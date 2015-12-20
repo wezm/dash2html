@@ -16,6 +16,8 @@ Once you have Rust installed run the following to install the `dash2html` tool:
 
     cargo install dash2html
 
+Ensure `$HOME/.cargo/bin` is in your PATH.
+
 ## Usage
 
 `dash2html` generates a HTML page that includes all snippets tagged with
