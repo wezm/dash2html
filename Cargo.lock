@@ -1,6 +1,6 @@
 [root]
 name = "dash2html"
-version = "0.1.0"
+version = "1.0.0"
 dependencies = [
  "regex 0.1.43 (registry+https://github.com/rust-lang/crates.io-index)",
  "rusqlite 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
