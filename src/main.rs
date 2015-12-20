@@ -1,6 +1,9 @@
 extern crate rusqlite;
 extern crate regex;
 
+use std::io;
+use std::io::Write;
+use std::env;
 use regex::Regex;
 use rusqlite::SqliteConnection;
 
@@ -35,7 +38,15 @@ fn escape(text: &str) -> String {
 fn main() {
     let variable_re = Regex::new(r"__.*?__").unwrap();
     let placeholder_re = Regex::new(r"(?i)@(?:time|clipboard|cursor|date)").unwrap();
-    let conn = SqliteConnection::open("/Users/wmoore/Dropbox (Personal)/Dash Snippets.dash").unwrap();
+
+    let snippets_path = env::args().nth(1);
+    if snippets_path.is_none() {
+        let mut stderr = io::stderr();
+        stderr.write("Usage: dash2html path/to/dash/snippets.dash\n".as_bytes()).unwrap();
+        std::process::exit(2);
+    }
+
+    let conn = SqliteConnection::open(snippets_path.unwrap()).unwrap();
 
     let mut stmt = conn.prepare("SELECT sid, title, body, syntax FROM snippets ORDER BY title").unwrap();
     let mut tags_stmt = conn.prepare("SELECT tags.tid, tags.tag FROM tags, tagsIndex WHERE tags.tid = tagsIndex.tid AND tagsIndex.sid = ?").unwrap();
