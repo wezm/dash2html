@@ -23,7 +23,7 @@ Ensure `$HOME/.cargo/bin` is in your PATH.
 `dash2html` generates a HTML page that includes all snippets tagged with
 `public` tag. Run it as follows:
 
-    dash2html '~/Library/Application\ Support/Dash/library.dash' > ~/Desktop/dash-snippets.html
+    dash2html ~/Library/Application\ Support/Dash/library.dash > ~/Desktop/dash-snippets.html
 
 Substitute the path to `library.dash` with the location of your snippets
 library if you have moved it in the Dash preferences. If you're unsure where
