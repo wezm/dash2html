@@ -5,6 +5,8 @@ mine at: <https://linkedlist.org/dash-snippets.html>.
 
 [Dash]: https://kapeli.com/dash
 
+[![Clippy Linting Result](https://clippy.bashy.io/github/wezm/dash2html/master/badge.svg)](https://clippy.bashy.io/github/wezm/dash2html/master/log)
+
 ## Installation
 
 `dash2html` is written in [Rust]. If you don't already have the Rust toolchain
