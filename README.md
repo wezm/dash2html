@@ -1,18 +1,11 @@
 # html2dash — Publish your Dash snippets online
 
-`html2dash` is a tool that generates a HTML file from your [Dash] snippets. See
-mine at: <https://linkedlist.org/dash-snippets.html>.
-
-[Dash]: https://kapeli.com/dash
-
-[![Clippy Linting Result](https://clippy.bashy.io/github/wezm/dash2html/master/badge.svg)](https://clippy.bashy.io/github/wezm/dash2html/master/log)
+`html2dash` is a tool that generates a HTML file from your [Dash] snippets.
 
 ## Installation
 
 `dash2html` is written in [Rust]. If you don't already have the Rust toolchain
-install visit the [Rust homepage][Rust] and click the Install button.
-
-[Rust]: https://www.rust-lang.org
+installed visit the [Rust homepage][Rust] and click the Install button.
 
 Once you have Rust installed run the following to install the `dash2html` tool:
 
@@ -31,3 +24,6 @@ Substitute the path to `library.dash` with the location of your snippets
 library if you have moved it in the Dash preferences. If you're unsure where
 your snippets library is located check the Snippets tab in the Dash
 preferences.
+
+[Dash]: https://kapeli.com/dash
+[Rust]: https://www.rust-lang.org
