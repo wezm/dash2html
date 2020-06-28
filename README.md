@@ -1,6 +1,6 @@
-# html2dash — Publish your Dash snippets online
+# dash2html — Publish your Dash snippets online
 
-`html2dash` is a tool that generates a HTML file from your [Dash] snippets.
+`dash2html` is a tool that generates a HTML file from your [Dash] snippets.
 
 ## Installation
 
