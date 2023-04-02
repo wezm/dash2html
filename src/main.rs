@@ -30,7 +30,7 @@ struct Tag {
 fn escape(text: &str) -> String {
     text.replace("&", "&amp;")
         .replace(">", "&gt;")
-        .replace(">", "&lt;")
+        .replace("<", "&lt;")
         .replace("\"", "&quot;")
         .replace("'", "&#27;")
 }
